@@ -1,19 +1,13 @@
 
 body{
-    margin:0;
-    position:absolute;
-    background:rgb(101, 168, 223);
-    
-    
+    margin:0;    
 }
-
-
 
 .sm-wrapper{
     margin-top:100px;
 }
 .sidemenu{
-    height:100vh;
+
     width:0;
     position:fixed;
     z-index:1;
@@ -67,15 +61,19 @@ body{
     transition: margin-left 0.5s;
    
 }
+.bg{
+    background: black 
+}
 
 .sidebar-heading{
-    font-size:25px;
+    font-size:40px;
     font-family: 'inconsolata',monospace;
     color : #ffff;
     display:block;
-    letter-spacing:5px;
+    height:100px;
     margin-bottom:10px;
-    padding:15px;
+    padding:6px;
+    padding-top: 10px;;
     background:#03d3fc;
     cursor: pointer;
 }
@@ -85,10 +83,9 @@ body{
 
 .transparent{
     width:600px;
-    height:714px;
     position:absolute;
     box-sizing:border-box;
-    background:rgba(0,0,0,0.5)
+    
     
 }
 .h2{
@@ -124,20 +121,24 @@ body{
     height:100%;
 }
 
-#e189b3b9-b88e-4ad6-86fc-a3cf637fca9f{
-   width:800px;
 
-}
 
 
 #svg{
 
-    height:850px;
-    width:55em;
     position: absolute;
     margin-left:32em;
+    margin-top:6em;
     float:right;
 }
+
+@media screen and (max-width: 992px) {
+    #svg {
+      
+        margin-left:0;
+        
+    }
+  }
 
 .name{
     position:absolute;
@@ -146,6 +147,37 @@ body{
     margin-left:25em;
     font-family: 'Tangerine', serif;
     font-size:48px;
-    text-shadow: 4px 4px 4px #aaa;
+    text-shadow: 2px 2px 2px #aaa;
     font-weight: 600;
 }
+
+
+#skills{
+    background:White;
+    padding :10px;
+}
+.skillsimg{
+  width:100%;
+    
+}
+.skillsli{
+    background-color:rgba(0, 0, 0,0.5)
+    
+}
+
+.interest{
+    font-size:60px;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#interest{
+    text-align:center;
+    
+}
+
+#in{
+    height:150px;
+}
+

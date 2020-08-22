@@ -10,6 +10,7 @@
 <BODY>
 
 
+    <div class="bg">
     <div id ="mySidemenu" class="sidemenu">
         <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
         <div class="sm-wrapper">
@@ -19,13 +20,11 @@
         </div>
     </div>
 
-
-
-    <div id="pg-content">
-        <div class="d-inline-flex " id="wrapper"  style=" background-color:rgb(101, 168, 223);height:714px;">
+    <div id="pg-content" style="height:712px;">
+        <div class="d-inline-flex " id="wrapper">
             
-                <div class="bg-light border-right" id="sidebar-wrapper" style="height:714px;">
-                    <div class="sidebar-heading" onclick="openSM()">&nbsp;&#9776;
+                <div class="bg-light border-right" id="sidebar-wrapper">
+                    <div class="sidebar-heading" id="sheading"onclick="openSM()">&nbsp;&#9776;
                     </div>
 
                     <div class="list-group list-group-flush">
@@ -54,9 +53,7 @@
 
                 <div id="page-content-wrapper">
                     <div  class="transparent">
-                        <div class="h2">
-                            <h1>Get to Know <span style="color:#03d3fc">Me</span></h1>
-                        </div>
+                            <h1 class="h2">Get to Know <span style="color:#03d3fc">Me</span></h1>
                         <div class="info">
                             <h5><i class="fas fa-map-marker-alt">&nbsp; Sharanpur ,UttarPardesh India ,247001 </i></h5>
                             <h5><span style="color:#03d3fc"><i class="far fa-comment fa-solid"></i>&nbsp; arpit09chauhan@gmail.com </i></span></h5>
@@ -67,9 +64,9 @@
                             <a href="resume.pdf"><button type="button" class="btn btn-light">Resume</button></a>
                         </div> 
                     </div>
-                        <h1 class="name">Arpit <span style="color:#575a89">Chauhan</span></h1>
-
-                        <svg width="1121"id="svg" height="600" viewBox="0 0 1121 608" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div>
+                        <h1 class="name" id="name">Arpit Chauhan</h1>
+                        <svg width="900"id="svg" height="608" viewBox="0 0 1121 608" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="undraw_source_code_xx2e 1" clip-path="url(#clip0)">
                         <path id="Vector" d="M274.927 22.1716C270.459 14.9168 263.466 9.57069 255.294 7.16239L249.291 11.9645L251.625 6.3634C249.662 6.064 247.676 5.94919 245.692 6.0205L240.291 12.9645L242.526 6.25835C237.84 6.84075 233.325 8.38786 229.266 10.8021C225.207 13.2164 221.693 16.4455 218.944 20.2857C212.07 30.1974 212.53 43.9753 219.291 53.9645C221.147 48.261 221.78 42.9153 223.635 37.2118C225.094 37.4106 226.572 37.4178 228.033 37.2332L230.291 31.9645L230.922 37.0104C237.92 36.4006 248.301 35.0619 254.936 33.8354L254.291 29.9645L258.151 33.1812C260.184 32.7132 261.391 32.2889 261.291 31.9645C266.226 39.9197 271.115 45.0008 276.049 52.9559C277.923 41.7349 281.229 32.4077 274.927 22.1716Z" fill="#2F2E41"/>
                         <path id="Vector_2" d="M273 45.962C274.105 45.962 275 44.1711 275 41.962C275 39.7528 274.105 37.962 273 37.962C271.895 37.962 271 39.7528 271 41.962C271 44.1711 271.895 45.962 273 45.962Z" fill="#FFB8B8"/>
@@ -129,16 +126,71 @@
                         </defs>
                         </svg>
 
+                    </div>
                 </div>
-            
+        </div>
+    </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00000" fill-opacity="1" d="M0,192L1440,64L1440,0L0,0Z"></path></svg>
+    <div class="container" id="skills">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>SKILLS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <img src="img/skills.jpg" class="skillsimg">
+            </div>
+            <div class="col-lg-1 col-md-12 col-12"></div>
+            <div class="col-lg-5 col-md-12 col-12">
+                    <br>
+                    <ul class="list-group list-group-flush skillsli">
+                        <li class="list-group-item list-group-item-primary">Programming Knowledge</li>
+                        <li class="list-group-item">C programming</li>
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">R</li>
+                        <li class="list-group-item">Scala</li>
+                        <li class="list-group-item">DS and ALgo</li>
+                    </ul>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12" id="listother">
+                    <br>
+                    <ul class="list-group list-group-flush skillsli">
+                        <li class="list-group-item list-group-item-primary">Other Skills</li>
+                        <li class="list-group-item">Machine Learning</li>
+                        <li class="list-group-item">Deep Learning</li>
+                        <li class="list-group-item">Natural Language Processing</li>
+                        <li class="list-group-item">Chatbot Development (RASA)</li>    
+                        <li class="list-group-item">HTML5</li>
+                        <li class="list-group-item">CSS</li>
+                    </ul>
+            </div>
+            <div class="col-lg-1 col-md-12 col-12"></div>
+            <div class="col-lg-6 col-md-12 col-12" id="imageother">
+                <img src="img/ai.jpg" class="skillsimg">
+            </div><br>
         </div>
     </div>
 
-<div class="container">
-</div>
-
-
-
+    <svg xmlns="http://www.w3.org/2000/svg" id= "skillsvg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,288L1440,128L1440,320L0,320Z"></path></svg>
+     <div class="container-fluid" style="background:black">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12" id="TopSkills">
+                <h1 class="interest">Intrest Area</h1>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 col-md-12 col-12" id = "in">
+                <h2 id="interest"></h2>
+            </div>
+        </div>
+     </div>                  
 
 
 <SCRIPT src="index.js"></SCRIPT>
