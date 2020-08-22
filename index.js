@@ -52,3 +52,10 @@ i = setInterval(function(){
     h2.innerHTML = interes[j]            
     j = j+1
 },1000)
+
+
+/*
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+  }, false);
+*/
