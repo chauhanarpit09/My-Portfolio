@@ -21,7 +21,7 @@ else if(x.matches){
 else{
     myFunction()
 }
-console.log(x)
+
 function myFunction() {
 
         document.getElementById('svg').style.width = "0"
@@ -30,11 +30,15 @@ function myFunction() {
         document.getElementById('imageother').innerHTML = document.getElementById('listother').innerHTML
         document.getElementById('listother').innerHTML = i
 
+        var non = document.getElementById('none')
+        non.parentNode.removeChild(non)
+
         document.getElementById('area').innerHTML = " "
         document.getElementById('skillsvg').style.width = "0" 
 
-        var inte = document.getElementById('in')
-        inte.style.marginTop = "50px";
+        
+
+
     
   }
   
@@ -47,9 +51,11 @@ i = setInterval(function(){
     if(j==interes.length){
          j=0;
      }
-    h2.style.color = c[j]
-    h2.innerHTML = interes[j]            
-    j = j+1
+     if(screen.width>500){
+        h2.style.color = c[j]
+        h2.innerHTML = interes[j]            
+        j = j+1
+     }
 },1000)
 
 
