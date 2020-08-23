@@ -30,9 +30,8 @@ function myFunction() {
         document.getElementById('imageother').innerHTML = document.getElementById('listother').innerHTML
         document.getElementById('listother').innerHTML = i
 
-        document.getElementById('skillsvg').innerHTML = " ";
-        var topskill = document.getElementById('TopSkills');
-        topskill.style.background = "#90ee90";
+        document.getElementById('area').innerHTML = " "
+        document.getElementById('skillsvg').style.width = "0" 
 
         var inte = document.getElementById('in')
         inte.style.marginTop = "50px";
