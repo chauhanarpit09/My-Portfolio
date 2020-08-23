@@ -199,3 +199,16 @@ body{
     100%{   color: #000;    }
 }
 
+
+.card{
+    margin:6%;
+    padding:2%;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .card {
+      padding:3%;
+      margin-left:3%;
+    }
+  }
